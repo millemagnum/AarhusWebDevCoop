@@ -13,7 +13,9 @@
     var projectDropdownActive = CurrentPage.AncestorOrSelf(1).Children.Where("DocumentTypeAlias == \"projectsOverview\"").First().Children.Where("Visible && UmbracoNavHide == false").OrderBy("CreateDate desc"); // - Viser alle projekter for Active member
 
 
-    var projectValue = Umbraco.GetPreValueAsString(25);  
+    var projectValue = Umbraco.GetPreValueAsString(25);
+
+    
 
 }
 
@@ -37,23 +39,20 @@
 
 		  @foreach (var item in selection){
 
-              var isProtected = umbraco.library.IsProtected(item.id, item.path);
-              var loginAccess = umbraco.library.IsProtected(item.id, item.path) && umbraco.library.HasAccess(item.id, item.path);
-
-              if (@item.Name.Equals("Projects") && !isProtected || loginAccess){ <!-- Tjekker om navnet er Projects og hvis det er, vises dropdown menuen - our projects - og viser kun de projekter i dropdown, som man har adgang til at se -->
+              if (@item.Name.Equals("Projects") ){ <!-- Tjekker om navnet er Projects og hvis det er, vises dropdown menuen - our projects - og viser kun de projekter i dropdown, som man har adgang til at se -->
 				  <li class="dropdown">
 					  <a href="@item.Url" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@item.Name <span class="caret"></span></a>
 					  <ul class="dropdown-menu">
                           <!-- Spytter hver artikel underside ud fra Projects level - viser kun de projekter i dropdown, som man har adgang til at se - her hvis man ikke er logget ind (det samme som Public), så vises kun de completede projekter -->
                           @if (@Members.GetCurrentLoginStatus().Name == null)
                           {
-                            foreach (var page in projectDropdownPublic)
-                            {
-                                var isProtected2 = umbraco.library.IsProtected(page.id, page.path);
-                                var loginAccess2 = umbraco.library.IsProtected(page.id, page.path) && umbraco.library.HasAccess(page.id, page.path);
+                              foreach (var page in projectDropdownPublic)
+                              {
+                                  var isProtected = umbraco.library.IsProtected(page.id, page.path);
+                                  var loginAccess = umbraco.library.IsProtected(page.id, page.path) && umbraco.library.HasAccess(page.id, page.path);
 
-                                if (!isProtected2 || loginAccess2)
-                                {
+                                  if (!isProtected || loginAccess)
+                                  {
                                     <li>
                                         <a href="@page.Url">@page.Name</a>
                                     </li>
@@ -63,40 +62,39 @@
                           else if (System.Web.Security.Roles.IsUserInRole(@Members.GetCurrentLoginStatus().Name, "Guest"))
                           {
                             @* Hvis brugeren er logget ind som Guest, så vises de completede og initiatede projekter *@
-                              foreach (var page in projectDropdownGuest)
-                              {
-                                  var isProtected2 = umbraco.library.IsProtected(page.id, page.path);
-                                  var loginAccess2 = umbraco.library.IsProtected(page.id, page.path) && umbraco.library.HasAccess(page.id, page.path);
+                          foreach (var page in projectDropdownGuest)
+                          {
+                              var isProtected = umbraco.library.IsProtected(page.id, page.path);
+                              var loginAccess = umbraco.library.IsProtected(page.id, page.path) && umbraco.library.HasAccess(page.id, page.path);
 
-                                  if (!isProtected2 || loginAccess2)
-                                  {
+
+                              if (!isProtected || loginAccess)
+                              {
                                         <li>
                                             <a href="@page.Url">@page.Name</a>
                                         </li>
                                   }
                               }
                           }
+
                           else if (System.Web.Security.Roles.IsUserInRole(@Members.GetCurrentLoginStatus().Name, "Active"))
                           {
                             @* Hvis brugeren er logget ind som Active, så vises alle projekter *@
-                              foreach (var page in projectDropdownActive)
-                              {
-                                  var isProtected2 = umbraco.library.IsProtected(page.id, page.path);
-                                  var loginAccess2 = umbraco.library.IsProtected(page.id, page.path) && umbraco.library.HasAccess(page.id, page.path);
-
-                                  if (!isProtected2 || loginAccess2)
+                                  foreach (var page in projectDropdownActive)
                                   {
+
                                         <li>
-                                            <a href="@page.Url">@page.Name</a>
-                                        </li>
+                                            <a href="@page.Url"> @page.Name</a>
+                                         </li>
                                   }
                               }
 
-                          }
 
-					  </ul> 
-					</li> <!-- dropdown slutter --> 
-			  } else {		
+                      </ul>
+
+                    </li> <!-- dropdown slutter -->
+
+              } else {
                   <!-- Spytter selve menupunkterne ud -->		  
 				  <li>
 					  <a href="@item.Url">@item.Name</a>
