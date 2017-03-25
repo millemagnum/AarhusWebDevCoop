@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ProjectItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+@* Viser projektets titel samt beskrivelse *@
+<h3><b>@Umbraco.Field("projectTitle")</h3></b>
+@Umbraco.Field("projectDescription")
+	<br/><br/>
+
+@* Viser projektstatussen både som tekst (f.eks. completed) og som tal *@
+<p>@umbraco.library.GetPreValueAsString(CurrentPage.projectStatus) (@Umbraco.Field("projectStatus"))</p>
+	
+<!-- Knappen tilbage til tidligere side -->	
+	@if (Model.Content.Parent != null && Model.Content.Level > 2)
+{ 
+    <a href="@Model.Content.Parent.Url" class="btn btn-primary">Back</a>
+}
+ 

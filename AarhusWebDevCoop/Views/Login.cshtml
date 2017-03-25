@@ -1,0 +1,34 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Login>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Viser login formular hvis man ikke er logget ind som member -->
+@if (!Members.GetCurrentLoginStatus().IsLoggedIn)
+{
+       @Umbraco.RenderMacro("loginForm")
+
+}
+else
+{
+    @* Ellers vises brugernavnet samt en knap for at kunne logge ud *@
+<p>You are currently logged in as @Members.GetCurrentLoginStatus().Name</p>
+
+    var logoutModel = new PostRedirectModel();
+    logoutModel.RedirectUrl = "/";
+
+    using (Html.BeginUmbracoForm<UmbLoginStatusController>
+    ("HandleLogout")) {
+    <button class="btn btn-primary">Logout</button>
+    @Html.HiddenFor(m => logoutModel.RedirectUrl)
+    }
+
+}
+
+

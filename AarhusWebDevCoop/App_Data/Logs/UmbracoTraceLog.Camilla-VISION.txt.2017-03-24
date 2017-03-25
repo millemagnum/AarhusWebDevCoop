@@ -1,0 +1,243 @@
+﻿ 2017-03-24 10:28:01,726 [P6332/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.9 application starting on CAMILLA-VISION
+ 2017-03-24 10:28:01,771 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-24 10:28:01,795 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 23ms)
+ 2017-03-24 10:28:01,871 [P6332/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-24 10:28:01,875 [P6332/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-24 10:28:01,883 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-24 10:28:02,349 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 464ms)
+ 2017-03-24 10:28:02,371 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-24 10:28:02,383 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 14ms)
+ 2017-03-24 10:28:02,383 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-24 10:28:02,399 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 15ms)
+ 2017-03-24 10:28:02,419 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-24 10:28:02,435 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 14ms)
+ 2017-03-24 10:28:02,435 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-24 10:28:02,451 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 15ms)
+ 2017-03-24 10:28:02,504 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-24 10:28:02,516 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 14ms)
+ 2017-03-24 10:28:02,516 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-24 10:28:02,532 [P6332/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 13ms)
+ 2017-03-24 10:28:08,149 [P6332/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-24 10:28:08,513 [P6332/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-24 10:28:08,572 [P6332/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-24 10:28:08,677 [P6332/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-24 10:28:08,701 [P6332/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 7085ms)
+ 2017-03-24 10:28:08,989 [P6332/D2/T5] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:50008/umbraco (UmbracoModule request)
+ 2017-03-24 10:28:09,362 [P6332/D2/T5] INFO  umbraco.content - Load Xml from file...
+ 2017-03-24 10:28:09,373 [P6332/D2/T5] INFO  umbraco.content - Loaded Xml from file.
+ 2017-03-24 10:28:10,190 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-24 10:28:10,226 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 34ms)
+ 2017-03-24 10:28:16,869 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-24 10:28:16,885 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 15ms)
+ 2017-03-24 10:28:17,085 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2017-03-24 10:28:17,101 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 15ms)
+ 2017-03-24 10:28:25,843 [P6332/D2/T15] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username eaacaole5@students.eaaa.dk from IP address ::1
+ 2017-03-24 10:28:25,846 [P6332/D2/T15] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: eaacaole5@students.eaaa.dk logged in from IP address ::1
+ 2017-03-24 10:28:26,046 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-24 10:28:26,079 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 27ms)
+ 2017-03-24 10:28:26,187 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-03-24 10:28:26,215 [P6332/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 29ms)
+ 2017-03-24 10:28:26,271 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-24 10:28:26,295 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 25ms)
+ 2017-03-24 10:28:26,327 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-24 10:28:26,327 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-24 10:28:26,335 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-24 10:28:26,359 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 24ms)
+ 2017-03-24 10:29:09,435 [P6332/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-23 10:29:09
+ 2017-03-24 10:30:50,589 [P6332/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1076' has been published.
+ 2017-03-24 10:30:50,713 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2017-03-24 10:30:50,739 [P6332/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 25ms)
+ 2017-03-24 10:30:54,860 [P6332/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:30:54,876 [P6332/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:31:29,474 [P6332/D2/T37] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1076' has been published.
+ 2017-03-24 10:31:33,529 [P6332/D2/T37] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:31:33,545 [P6332/D2/T37] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:32:00,954 [P6332/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1076' has been published.
+ 2017-03-24 10:32:04,989 [P6332/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:32:05,009 [P6332/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:32:52,778 [P6332/D2/T61] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1076' has been published.
+ 2017-03-24 10:32:56,827 [P6332/D2/T61] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:32:56,847 [P6332/D2/T61] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:35:40,923 [P6332/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '1st project' with Id '2092' has been published.
+ 2017-03-24 10:35:44,954 [P6332/D2/T92] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:35:44,966 [P6332/D2/T92] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:37:24,399 [P6332/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Our website idea' with Id '1083' has been published.
+ 2017-03-24 10:37:28,463 [P6332/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:37:28,491 [P6332/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:37:50,293 [P6332/D2/T121] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Our website idea' with Id '1083' has been published.
+ 2017-03-24 10:37:54,322 [P6332/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:37:54,342 [P6332/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:38:29,760 [P6332/D2/T81] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Shop for catowners' with Id '1084' has been published.
+ 2017-03-24 10:38:33,812 [P6332/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:38:33,832 [P6332/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:40:11,553 [P6332/D2/T96] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gaming convention website' with Id '1085' has been published.
+ 2017-03-24 10:40:15,612 [P6332/D2/T69] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:40:15,636 [P6332/D2/T69] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:41:16,863 [P6332/D2/T101] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '2nd project' with Id '2093' has been published.
+ 2017-03-24 10:41:20,920 [P6332/D2/T58] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:41:20,944 [P6332/D2/T58] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:41:28,376 [P6332/D2/T101] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '2nd project' with Id '2093' has been published.
+ 2017-03-24 10:41:32,411 [P6332/D2/T117] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:41:32,411 [P6332/D2/T117] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:42:21,098 [P6332/D2/T123] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '2nd project (hidden)' with Id '2093' has been published.
+ 2017-03-24 10:42:25,159 [P6332/D2/T117] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:42:25,165 [P6332/D2/T117] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:43:07,611 [P6332/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'A members only project' with Id '3124' has been published.
+ 2017-03-24 10:43:11,658 [P6332/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:43:11,686 [P6332/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:46:19,448 [P6332/D2/T118] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Info' with Id '1079' has been published.
+ 2017-03-24 10:46:23,505 [P6332/D2/T118] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:46:23,509 [P6332/D2/T118] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:46:39,652 [P6332/D2/T56] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Info' with Id '1079' has been published.
+ 2017-03-24 10:46:43,693 [P6332/D2/T118] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:46:43,713 [P6332/D2/T118] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:47:26,736 [P6332/D2/T53] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Info' with Id '1079' has been published.
+ 2017-03-24 10:47:30,771 [P6332/D2/T14] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:47:30,775 [P6332/D2/T14] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:47:40,958 [P6332/D2/T23] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Info' with Id '1079' has been published.
+ 2017-03-24 10:47:44,990 [P6332/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:47:44,995 [P6332/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:51:56,073 [P6332/D2/T104] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About Us' with Id '1090' has been published.
+ 2017-03-24 10:52:00,137 [P6332/D2/T95] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 10:52:00,153 [P6332/D2/T95] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 10:53:18,366 [P6332/D2/T103] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username Hans from IP address ::1
+ 2017-03-24 10:55:39,926 [P6332/D2/T79] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username Dorthe from IP address ::1
+ 2017-03-24 11:11:03,297 [P6332/D2/T232] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-03-24 11:11:03,317 [P6332/D2/T232] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 20ms)
+ 2017-03-24 11:11:56,859 [P6332/D2/T244] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-24 11:12:01,511 [P6332/D2/T242] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-24 11:12:53,458 [P6332/D2/T241] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-24 11:30:28,601 [P6332/D2/T255] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: eaacaole5@students.eaaa.dk, IP Address: ::1
+ 2017-03-24 14:29:05,971 [P6332/D2/T497] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-23 14:29:05
+ 2017-03-24 15:39:05,613 [P6332/D2/T928] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username Hans from IP address ::1
+ 2017-03-24 15:58:24,076 [P6332/D2/T918] WARN  umbraco.macro - Error loading partial view macro (View: ~/Views/MacroPartials/loginForm.cshtml). Exception: System.Web.HttpCompileException (0x80004005): c:\Users\camil\Documents\EAAA-WebudviklingPBA\2. semester\Udviklingsmiljøer\Lesson 2\Mandatory\AarhusWebDevCoop\AarhusWebDevCoop\Views\MacroPartials\loginForm.cshtml(37): error CS1928: 'System.Web.Mvc.HtmlHelper<Umbraco.Web.Models.PartialViewMacroModel>' indeholder ikke en definition for 'TextBoxFor', og overload 'System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel,TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel,TProperty>>, string, object)' for bedste udvidelsesmetode har ugyldige argumenter
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, IPublishedContent content)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode node)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+ 2017-03-24 15:58:24,077 [P6332/D2/T918] WARN  umbraco.macro - Error loading Partial View (file: ~/Views/MacroPartials/loginForm.cshtml). Exception: System.Web.HttpCompileException (0x80004005): c:\Users\camil\Documents\EAAA-WebudviklingPBA\2. semester\Udviklingsmiljøer\Lesson 2\Mandatory\AarhusWebDevCoop\AarhusWebDevCoop\Views\MacroPartials\loginForm.cshtml(37): error CS1928: 'System.Web.Mvc.HtmlHelper<Umbraco.Web.Models.PartialViewMacroModel>' indeholder ikke en definition for 'TextBoxFor', og overload 'System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel,TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel,TProperty>>, string, object)' for bedste udvidelsesmetode har ugyldige argumenter
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, IPublishedContent content)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode node)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+ 2017-03-24 15:58:24,082 [P6332/D2/T918] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Web.HttpCompileException (0x80004005): c:\Users\camil\Documents\EAAA-WebudviklingPBA\2. semester\Udviklingsmiljøer\Lesson 2\Mandatory\AarhusWebDevCoop\AarhusWebDevCoop\Views\MacroPartials\loginForm.cshtml(37): error CS1928: 'System.Web.Mvc.HtmlHelper<Umbraco.Web.Models.PartialViewMacroModel>' indeholder ikke en definition for 'TextBoxFor', og overload 'System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel,TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel,TProperty>>, string, object)' for bedste udvidelsesmetode har ugyldige argumenter
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, IPublishedContent content)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode node)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+   at Umbraco.Web.UmbracoComponentRenderer.RenderMacro(macro m, IDictionary`2 parameters, page umbracoPage)
+   at Umbraco.Web.UmbracoComponentRenderer.RenderMacro(String alias, IDictionary`2 parameters, page umbracoPage)
+   at Umbraco.Web.UmbracoComponentRenderer.RenderMacro(String alias, IDictionary`2 parameters)
+   at Umbraco.Web.UmbracoComponentRenderer.RenderMacro(String alias, Object parameters)
+   at Umbraco.Web.UmbracoHelper.RenderMacro(String alias)
+   at ASP._Page_Views_Login_cshtml.Execute() in c:\Users\camil\Documents\EAAA-WebudviklingPBA\2. semester\Udviklingsmiljøer\Lesson 2\Mandatory\AarhusWebDevCoop\AarhusWebDevCoop\Views\Login.cshtml:line 15
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2017-03-24 16:11:16,205 [P6332/D2/T721] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username eaacaole5@students.eaaa.dk from IP address ::1
+ 2017-03-24 16:11:16,205 [P6332/D2/T721] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: eaacaole5@students.eaaa.dk logged in from IP address ::1
+ 2017-03-24 16:17:07,855 [P6332/D2/T893] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Forbidden Access' with Id '3123' has been published.
+ 2017-03-24 16:17:11,942 [P6332/D2/T104] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 16:17:11,950 [P6332/D2/T104] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 16:17:41,384 [P6332/D2/T880] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username Dorthe from IP address ::1
+ 2017-03-24 16:19:24,807 [P6332/D2/T913] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username Dorthe from IP address ::1
+ 2017-03-24 16:19:47,325 [P6332/D2/T904] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Forbidden Access' with Id '3123' has been published.
+ 2017-03-24 16:19:51,385 [P6332/D2/T104] INFO  umbraco.content - Save Xml to file...
+ 2017-03-24 16:19:51,394 [P6332/D2/T104] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-24 16:30:53,414 [P6332/D2/T200] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: eaacaole5@students.eaaa.dk, IP Address: ::1
+ 2017-03-24 18:03:17,349 [P6332/D2/T296] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username eaacaole5@students.eaaa.dk from IP address ::1
+ 2017-03-24 18:03:17,349 [P6332/D2/T296] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: eaacaole5@students.eaaa.dk logged in from IP address ::1
+ 2017-03-24 18:03:42,723 [P6332/D2/T278] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-24 18:03:42,723 [P6332/D2/T278] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-24 18:22:55,414 [P6332/D2/T245] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: eaacaole5@students.eaaa.dk, IP Address: ::1
+ 2017-03-24 18:24:12,718 [P6332/D2/T225] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username eaacaole5@students.eaaa.dk from IP address ::1
+ 2017-03-24 18:24:12,718 [P6332/D2/T225] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: eaacaole5@students.eaaa.dk logged in from IP address ::1
+ 2017-03-24 18:29:05,989 [P6332/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-23 18:29:05
+ 2017-03-24 18:34:40,564 [P6332/D2/T263] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-24 18:54:08,417 [P6332/D2/T91] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: eaacaole5@students.eaaa.dk, IP Address: ::1
+ 2017-03-24 18:54:14,422 [P6332/D2/T108] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: eaacaole5@students.eaaa.dk, IP Address: ::1
+ 2017-03-24 22:15:32,940 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-03-24 22:15:32,940 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-03-24 22:15:32,941 [P6332/D2/T321] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-03-24 22:15:32,942 [P6332/D2/T314] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-03-24 22:15:32,944 [P6332/D2/T314] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-03-24 22:15:32,944 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-03-24 22:15:32,944 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-03-24 22:15:32,944 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-03-24 22:15:32,944 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-03-24 22:15:32,944 [P6332/D2/T292] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-03-24 22:15:32,944 [P6332/D2/T310] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-03-24 22:15:32,945 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-03-24 22:15:32,945 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-03-24 22:15:32,945 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-03-24 22:15:32,945 [P6332/D2/T314] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-03-24 22:15:32,945 [P6332/D2/T307] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-03-24 22:15:32,945 [P6332/D2/T288] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated

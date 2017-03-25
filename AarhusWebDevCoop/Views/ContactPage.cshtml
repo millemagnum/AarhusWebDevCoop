@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<h2>@CurrentPage.Name</h2>
+
+<!-- Child action for Surface controller -->
+<div>
+	@Html.Action("Index", "ContactFormSurface")
+</div>

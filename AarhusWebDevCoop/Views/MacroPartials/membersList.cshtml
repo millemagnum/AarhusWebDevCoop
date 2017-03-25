@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    var memberService = ApplicationContext.Current.Services.MemberService;
+
+    var members = memberService.GetMembersByGroup("Active");
+
+    var membersGuests = memberService.GetMembersByGroup("Guest");
+}
+
+<h4><b>Active members:</b></h4> <br />
+
+@foreach (var member in members)
+{
+    @* Finder navn, adresse, postnr, by og email for active members *@
+    <p>
+        @member.Name <br />
+        @member.GetValue("address") <br />
+        @member.GetValue("zip") @member.GetValue("city") <br />
+        Email: @member.Email <br />
+        Skills:
+        @* Hvis det pågældende member har defineret nogle skills ved sin profil, joines de forskellige skills fra den dropdownmultiple og skrives ud med komma mellem hver skill *@
+        @{
+            if (member.HasProperty("skills") && member.GetValue("skills") != null)
+            {
+
+                String[] skills = member.GetValue("skills").ToString().Split(',');
+
+                string skillString = string.Join(", ", from skill in skills select umbraco.library.GetPreValueAsString(Convert.ToInt32(skill)));
+
+
+            <span>@skillString</span>
+                }
+           } 
+
+    </p> <br/>
+
+}
+
+<h4><b>Guest members:</b></h4><br/>
+
+@foreach (var guestMember in membersGuests)
+{
+    @* Navn og email for Guest members bliver udskrevet *@
+    <p>
+        @guestMember.Name <br />
+        @guestMember.Email
+    </p> <br/>
+}

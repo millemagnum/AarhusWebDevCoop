@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@*
+    This snippet makes a list of links to the of parents of the current page using an unordered html list.
+
+    How it works:
+    - It uses the Ancestors() method to get all parents and then generates links so the visitor can go back
+    - Finally it outputs the name of the current page (without a link)
+
+CurrentPage.Ancestors
+*@
+
+@{ IPublishedContent page = Model.Content.AncestorOrSelf(1); //   Umbraco.TypedContent(1076);
+
+    @* Dropdown for projects - finder børnene herunder *@
+    var projectDropdown = CurrentPage.AncestorOrSelf(1).Children.Where("DocumentTypeAlias == \"projectsOverview\"").First().Children.Where("Visible").OrderBy("CreateDate desc");
+
+    @* Dropdown for articles - finder børnene herunder *@
+    var articlesDropdown = CurrentPage.AncestorOrSelf(1).Children.Where("DocumentTypeAlias == \"articleOverview\"").First().Children.Where("Visible").OrderBy("CreateDate desc");
+}
+
+    <ul>
+        <!-- != og sitemap fjerner den side der har det alias, så sitemap vises altså ikke i sitemappet - sortere det efter levels -->
+        @foreach (IPublishedContent child in page.Children.Where("Visible && DocumentTypeAlias != \"sitemap\"").OrderBy("Level"))
+        {
+            @* Hvis navnet er Projects, så udskrives undersiderne herunder i en foreach *@
+            if (@child.Name.Equals("Projects"))
+            {
+                <li><a href="@child.Url">@child.Name</a> &raquo;</li>
+                foreach (var pitem in projectDropdown)
+                {
+                    @* Placerer undersiderne i ul tags, så artikekturen af siderne bliver lettere at se *@
+                    <ul>
+                        <li>
+                            <a href="@pitem.Url">@pitem.Name</a>
+                        </li>
+                    </ul>
+                }
+
+            }
+            @* Hvis navnet er Articles, så udskrives undersiderne herunder i en foreach *@
+            if (@child.Name.Equals("Articles"))
+            {
+                <li><a href="@child.Url">@child.Name</a> &raquo;</li>
+                foreach (var aitem in articlesDropdown)
+                {
+                    @* Placerer undersiderne i ul tags, så artikekturen af siderne bliver lettere at se *@
+                    <ul>
+                        <li>
+                            <a href="@aitem.Url">@aitem.Name</a>
+                        </li>
+                    </ul>
+                }
+
+            }
+            else
+            {
+                <li><a href="@child.Url">@child.Name</a> </li>
+            }
+
+        }
+
+    </ul>

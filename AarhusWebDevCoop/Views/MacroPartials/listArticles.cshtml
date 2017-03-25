@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{ 
+    var selection = CurrentPage.Children.Where("Visible").OrderBy("CreateDate desc"); 
+    @* OrderBy() takes the property to sort by and optionally order desc/asc *@
+}
+
+@* Udskriver artiklerne på siden og her vises også et kort summary af artiklen samt er der en knap for "Read more", som gør at man kan klikke ind på den pågældende artikel man vil læse *@
+@foreach (var item in selection)
+{
+    <div class="article">
+        <div class="articletitle"><h4><a href="@item.Url"><b>@item.Name</b></a></h4></div>
+        <div class="articlepreview">@Umbraco.Truncate(@item.articleContent,100) <button type="button" class="btn btn-default"><a href="@item.Url">Read more..</a></button></div>
+    </div>
+    <hr/>
+}

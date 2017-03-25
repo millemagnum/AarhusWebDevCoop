@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticleOverview>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Viser titler på artikler og artiklers indhold, samt benytter partial view listArticles -->
+@Umbraco.Field("articlesTitle")
+@Umbraco.Field("articlesBodyText")
+@Umbraco.RenderMacro("listArticles")

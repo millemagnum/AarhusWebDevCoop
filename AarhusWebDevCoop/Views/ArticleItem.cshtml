@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticleItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Viser titlen på artiklen og artiklens indhold -->
+<h3><b>@Umbraco.Field("articleTitle")</b></h3>
+@Umbraco.Field("articleContent") <br/><br/>
+	
+<!-- Knappen tilbage til tidligere side -->	
+	@if (Model.Content.Parent != null && Model.Content.Level > 2)
+{ 
+    <a href="@Model.Content.Parent.Url" class="btn btn-primary">Back</a>
+}
+ 

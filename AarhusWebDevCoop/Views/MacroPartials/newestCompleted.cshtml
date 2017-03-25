@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+<!-- Finder de 5 nyeste gennemførte projekter -->
+@{ var selection = CurrentPage.Site().Children.Where("DocumentTypeAlias == \"projectsOverview\"").First().Children.Where("Visible && projectStatus.Contains(\"25\")").OrderBy("CreateDate desc").Take(5);; }
+
+
+<!-- Hvis der er nogle nyeste gennemførte projekter, bliver de udskrevet som links - som vises på forsiden -->
+@if (selection.Any())
+{
+    <ul>
+        @foreach (var item in selection)
+        {
+            <li>
+                <a href="@item.Url">@item.Name</a>
+            </li>
+        }
+    </ul>
+}
